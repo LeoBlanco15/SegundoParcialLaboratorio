@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial Leonardo Blanco</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script type="text/javascript" src="./Logica/js/Clases/Vehiculo.js"></script>
+    <script type="text/javascript" src="./Logica/js/Clases/Auto.js"></script>
+    <script type="text/javascript" src="./Logica/js/Clases/Camioneta.js"></script>
+    <script type="text/javascript" src="./Logica/js/Main.js"></script>
+
+
+</head>
+<body>
+    <div>
+        <button id="Agregar" class="button" value="Agregar">Alta</button>
+
+    </div>
+    <div>
+        <h1>Filtros</h1>
+    </div>
+    <div>
+        <label>filtrar por :</label>
+        <select  id="Type" class="selects" >
+            <option id="Todos">Todos</option>
+            <option id="Autos">Autos</option>
+            <option id="Camioneta">Camionetas</option>
+        </select>
+        <label >Promedio de precio :</label>
+        <input type="text" id="Promedio" class="selects" readonly>
+        <button id="PromedioBtn" class="button" value="Agregar">Calcular promedio</button>
+    </div>
+    <div>
+        <table id="TablaAutos">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Precio</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody id="TablaBody">
+                
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </div>
+
+    
+    <div id="nuevoAuto" class="popUp">
+
+        
+        <div class="modal-content">
+          <label class="input">Id</label>
+          <br>
+          <input class="input" type="text" id="IdNuevoVehiculo" disabled/>
+          <br>
+          <label class="input">Marca</label>
+          <br>
+          <input class="input" type="text" id="MarcaNuevoVehiculo"/>
+          <br>
+          <label class="input">Modelo</label>
+          <br>
+          <input class="input" type="text" id="ModeloNuevoVehiculo"/>
+          <br>
+          <label class="input">Precio</label>
+          <br>
+          <input class="input" type="number" id="PrecioVehiculo"/>
+          <br>
+          <label class="input">Tipo</label>
+          <br>
+          <select  id="Type" class="selects">
+            <option id="Autos">Auto</option>
+            <option id="Camioneta">Camioneta</option>
+        </select>
+          <br>
+          <button id="Aceptar" class="buttonAcept">Aceptar</button>
+          <button id="Cancelar" class="buttonCancel">Cancelar</button>
+        </div>
+      
+      </div>
+      
+</body>
+</html>
